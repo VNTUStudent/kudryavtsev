@@ -2,7 +2,9 @@ import { FLOW_PER_TICK, FUEL_LABELS, MIN_PURCHASE_LITERS } from './constants'
 import { fmtLiters, fmtMoney } from './format'
 import { pushHistory } from './history'
 import { retailPrice } from './market'
+import { silentContext } from './sim-context'
 import type { Car, Pump, SimState } from './types'
+import { QueueSystem } from './systems/QueueSystem'
 
 export function assignPumps(state: SimState): void {
   for (const pump of state.pumps) {
@@ -67,20 +69,10 @@ export function tickPumps(state: SimState): void {
   }
 }
 
+const queueSystem = new QueueSystem()
+
 export function tickQueue(state: SimState): void {
-  for (const carId of [...state.queue]) {
-    const car = state.cars[carId]
-    if (car === undefined) {
-      removeFromQueue(state, carId)
-      continue
-    }
-    car.patience -= 1
-    if (car.patience <= 0) {
-      removeFromQueue(state, carId)
-      pushHistory(car, state.tick, 'left', 'Не дочекався - «тут же пів години стояти»')
-      state.stats.lost += 1
-    }
-  }
+  queueSystem.run(state, silentContext)
 }
 
 function finishRefuel(state: SimState, pump: Pump, car: Car, cutShort: boolean): void {
@@ -107,9 +99,4 @@ function resetPump(pump: Pump): void {
 function leave(state: SimState, car: Car, reason: string, countLost: boolean): void {
   pushHistory(car, state.tick, 'left', reason)
   if (countLost) state.stats.lost += 1
-}
-
-function removeFromQueue(state: SimState, carId: string): void {
-  const index = state.queue.indexOf(carId)
-  if (index >= 0) state.queue.splice(index, 1)
 }
