@@ -1,4 +1,4 @@
-import { FUEL_BASE_PRICE, OP_COST_PER_LITER } from './constants'
+import { FUEL_BASE_PRICE, JOIN_CHANCE_BASE, JOIN_CHANCE_MAX, JOIN_CHANCE_MIN, JOIN_CHANCE_SLOPE, OP_COST_PER_LITER } from './constants'
 import type { FuelType, SimState } from './types'
 
 export function activePriceMul(state: SimState, fuelType: FuelType): number {
@@ -31,5 +31,8 @@ export function vipWalletMul(state: SimState): number {
 }
 
 export function joinChance(state: SimState): number {
-  return Math.min(1.45, Math.max(0.15, 1.3 - 1.2 * state.markup))
+  return Math.min(
+    JOIN_CHANCE_MAX,
+    Math.max(JOIN_CHANCE_MIN, JOIN_CHANCE_BASE - JOIN_CHANCE_SLOPE * state.markup)
+  )
 }
