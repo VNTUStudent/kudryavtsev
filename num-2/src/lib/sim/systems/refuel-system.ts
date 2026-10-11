@@ -1,5 +1,5 @@
 import type { Draft } from 'immer'
-import { FLOW_PER_TICK, FUEL_LABELS } from '../constants'
+import { FLOW_PER_TICK, FUEL_LABELS, REFUEL_EPSILON } from '../constants'
 import { fmtLiters, fmtMoney } from '../format'
 import { pushHistory } from '../history'
 import { retailPrice } from '../market'
@@ -33,7 +33,7 @@ export class RefuelSystem extends TickSystem {
         car.fuelLevel += portion
       }
       const reservoirEmpty = portion < flow
-      if (pump.delivered >= pump.requested - 0.01 || reservoirEmpty) {
+      if (pump.delivered >= pump.requested - REFUEL_EPSILON || reservoirEmpty) {
         this.finishRefuel(state, pump, car, reservoirEmpty)
       }
     }
