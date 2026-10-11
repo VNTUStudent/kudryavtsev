@@ -8,8 +8,7 @@ import {
   RESERVOIR_START,
   START_BALANCE,
 } from './constants'
-import { advanceTick } from './engine'
-import { orderTanker as orderTankerDraft } from './tanker'
+import { advanceTick, orderTanker as orderTankerDraft } from './engine'
 import type { FuelType, SimState } from './types'
 
 export interface SimStore extends SimState {
