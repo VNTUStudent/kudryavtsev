@@ -1,13 +1,13 @@
-import { publishNotice } from './notifications'
 import { SimulationEngine } from './SimulationEngine'
+import type { SimContext } from './sim-context'
 import type { FuelType, SimState } from './types'
 
 const simulationEngine = new SimulationEngine()
 
-export function advanceTick(state: SimState): void {
-  simulationEngine.advance(state, { emit: publishNotice })
+export function advanceTick(state: SimState, context: SimContext): void {
+  simulationEngine.advance(state, context)
 }
 
-export function orderTanker(state: SimState, fuelType: FuelType): void {
-  simulationEngine.orderTanker(state, fuelType, { emit: publishNotice })
+export function orderTanker(state: SimState, fuelType: FuelType, context: SimContext): void {
+  simulationEngine.orderTanker(state, fuelType, context)
 }
