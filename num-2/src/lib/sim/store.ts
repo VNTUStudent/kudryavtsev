@@ -9,6 +9,8 @@ import {
   START_BALANCE,
 } from './constants'
 import { advanceTick, orderTanker as orderTankerDraft } from './engine'
+import { publishNotice } from './notifications'
+import type { SimNotice } from './sim-notice'
 import type { FuelType, SimState } from './types'
 
 export interface SimStore extends SimState {
@@ -48,6 +50,12 @@ export function createInitialState(): SimState {
   }
 }
 
+function runWithNotices(update: (emit: (notice: SimNotice) => void) => void): void {
+  const notices: SimNotice[] = []
+  update((notice) => notices.push(notice))
+  for (const notice of notices) publishNotice(notice)
+}
+
 export const useSimStore = create<SimStore>()(
   immer((set) => ({
     ...createInitialState(),
@@ -63,11 +71,15 @@ export const useSimStore = create<SimStore>()(
       set((state) => {
         state.markup = Math.min(MARKUP_MAX, Math.max(MARKUP_MIN, markup))
       }),
-    orderTanker: (fuelType) => set((state) => orderTankerDraft(state, fuelType)),
+    orderTanker: (fuelType) =>
+      runWithNotices((emit) =>
+        set((state) => orderTankerDraft(state, fuelType, { emit }))
+      ),
     restart: () =>
       set((state) => {
         Object.assign(state, createInitialState())
       }),
-    advance: () => set((state) => advanceTick(state)),
+    advance: () =>
+      runWithNotices((emit) => set((state) => advanceTick(state, { emit }))),
   }))
 )
