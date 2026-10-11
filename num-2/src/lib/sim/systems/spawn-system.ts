@@ -8,6 +8,7 @@ import {
   PATIENCE_MAX,
   PATIENCE_MIN,
   QUEUE_LIMIT,
+  ROSTER_REUSE_CHANCE,
   ROSTER_TARGET,
   SPAWN_RATE,
   WALLET_CAP,
@@ -49,7 +50,7 @@ export class SpawnSystem extends TickSystem {
     )
     const rosterFull = Object.keys(state.cars).length >= ROSTER_TARGET
     const car =
-      idle.length > 0 && (rosterFull || chance(0.65))
+      idle.length > 0 && (rosterFull || chance(ROSTER_REUSE_CHANCE))
         ? this.refreshCar(pick(idle), state)
         : this.createCar(state, fuelType)
     car.patience = randInt(PATIENCE_MIN, PATIENCE_MAX)
