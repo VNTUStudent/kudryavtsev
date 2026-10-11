@@ -1,6 +1,8 @@
-# АЗС «Трембіта» — Gas Station Simulator
+# АЗС «Трембіта» v2 — Gas Station Simulator
 
 Browser-based Ukrainian gas station management sim. Fully client-side: no backend, no database — the whole game lives in a zustand store driven by a tick engine.
+
+Лабораторна №2: поведінка гри ідентична num-1, архітектура ядра переписана в ООП-стилі — модифікатори доступу, наслідування, поліморфізм, кожен клас в окремому файлі.
 
 ## Run
 
@@ -13,24 +15,42 @@ Build: `bun run build` · Lint: `bun run lint` · Typecheck: `bunx tsc --noEmit`
 
 ## Gameplay
 
+Unchanged from num-1:
+
 - 4 fuel pumps serve 3 fuels (А-92, А-95, ДП), each with its own 2000 L reservoir
 - Cars spawn per tick, queue, refuel, pay, leave — every car is a persistent entity with wallet, tank, stats and visit history (click any car to inspect)
 - Order benzovozes (1000 L) to refill reservoirs; they arrive after 30–45 ticks
 - Satirical ТСН news events drive the market: price multipliers on wholesale, demand spikes, pump breakdowns, VIP guests with fat wallets, and rare crisis events («Трамп вторгся в Іран»)
-- Player controls the global markup (−20%…+80%): overtaking customers scares them off, undercutting boosts traffic
+- Player controls the global markup (−20%…+80%)
 - Bankruptcy at −50 000 ₴ → «Вас мобілізували»
 
-## Architecture
+## OOP architecture
 
-Single source of truth: `src/lib/sim/store.ts` (zustand + immer). `SimDriver` component advances the engine on an interval scaled by speed. Everything else is derived:
+Entities stay plain interfaces inside the store; classes are stateless systems that operate on the immer draft. One class per file, `src/lib/sim/systems/`:
 
-- `engine.ts` — tick pipeline: news → tankers → spawn → pump assignment → pumping → queue → bankruptcy check
-- `market.ts` — pure derived selectors: effective wholesale/retail prices and demand multipliers computed from active events (never cached)
-- `spawn.ts` — car acquisition: persistent roster (~50 cars) with returning customers
-- `refuel.ts` — metered pumping (6 L/tick, incremental payment)
-- `news.ts` / `news-pool.ts` — event firing, expiry, and the 33-event pool (each with a satirical lead paragraph)
-- `tanker.ts` — benzovoz orders and arrivals
+| Class | Role |
+|---|---|
+| `TickSystem` | abstract base: public `run`, protected abstract `execute` |
+| `NewsSystem` | event lifecycle, weighted pool pick, pump outages |
+| `TankerSystem` | benzovoz orders and arrivals (public `order` + tick) |
+| `SpawnSystem` | demand-driven car acquisition, roster reuse |
+| `PumpAssignmentSystem` | queue-to-pump allocation, rejection paths |
+| `RefuelSystem` | metered delivery, incremental payment |
+| `QueueSystem` | patience decay, abandonment |
+| `BankruptcySystem` | game-over threshold |
+| `SimulationEngine` | composes the systems, polymorphic tick loop |
 
-UI is scene-first: a drawn side-view SVG station (`src/components/scene/`) with a day/night cycle, animated cars, pumps with live hoses and a price totem, topped by a ТСН breaking-news banner and marquee ticker (`src/components/news/`); management panels (fuel gauges, markup, benzovozes, client registry) sit below. shadcn/ui (Base UI primitives) elsewhere. Ukrainian only, ₴ currency.
+- **Access modifiers:** `public` on the system contract, `protected` on the `execute` hook, `private` on domain helpers (`acquireCar`, `finishRefuel`, `pickEvent`, …)
+- **Inheritance:** seven concrete systems extend `TickSystem`
+- **Polymorphism:** `SimulationEngine` runs a `readonly TickSystem[]` — dynamic dispatch, no concrete-type checks
+- **Encapsulation:** zustand remains the single source of truth; market prices are derived selectors computed on read; systems never hold state
+
+Notifications (sonner toasts) are emitted through a `SimContext` callback and published outside the immer recipe by the store actions.
+
+News copy is pure data split by category (`news-categories/`), reassembled in `news-pool.ts`.
+
+## Parity guarantee
+
+The refactor was verified against num-1 with a seeded headless harness: 5 scenarios × 3 seeds × 3000 ticks, per-tick state snapshots and an RNG call counter — byte-identical runs, including the bankruptcy game-over path.
 
 Tuning knobs: `src/lib/sim/constants.ts`.
