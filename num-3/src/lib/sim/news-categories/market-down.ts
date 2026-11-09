@@ -1,0 +1,55 @@
+import { all, gas } from './shared'
+import type { NewsEvent } from '../types'
+
+export const MARKET_DOWN_EVENTS: NewsEvent[] = [
+  {
+    id: 'market-down-01',
+    category: 'market-down',
+    source: 'ТСН: добрі новини',
+    headline: 'ЕКСКЛЮЗИВ: На 9-й заправці Малинівки знайшли А-92 дешевше - ціна впала «після свят»',
+    body: 'Свята закінчилися ще навесні, але ціна впала щойно. Продавці дивуються не менше за покупців.',
+    effects: { priceMul: all(0.88), demandMul: all(0.92) },
+    durationTicks: 45,
+    weight: 5,
+  },
+  {
+    id: 'market-down-02',
+    category: 'market-down',
+    source: 'ТСН: комунальний скандал',
+    headline: 'ТСН розслідує: ЖЕК у Ніжині переплутав труби й випадково здешевив 1 000 л ДП',
+    body: 'Замість води в кранах - дизель за акцією. ЖЕК вибачається і просить не палити поблизу.',
+    effects: { priceMul: { diesel: 0.82 }, demandMul: { diesel: 0.85 } },
+    durationTicks: 55,
+    weight: 3,
+  },
+  {
+    id: 'market-down-03',
+    category: 'market-down',
+    source: 'ТСН: полтавський випуск',
+    headline: 'Надзвичайні новини: 3 бензовози в Полтаві повернулися порожні - водії «зайшли до бабці»',
+    body: 'Водії зайшли «на п’ять хвилин» і вийшли через дві доби. Пальне в місті подешевшало від подиву.',
+    effects: { priceMul: gas(0.9), demandMul: gas(0.95) },
+    durationTicks: 38,
+    weight: 4,
+  },
+  {
+    id: 'market-down-04',
+    category: 'market-down',
+    source: 'ТСН: аграрний блок',
+    headline: 'ЕКСКЛЮЗИВ: ДП по 53 ₴ оголосили «дорогим» - фермер у Гадячі замовив ще 2 каністри',
+    body: 'Фермер пояснив: «аби дорожчало не так швидко». Логіку зрозуміли не всі, але каністри розкупили.',
+    effects: { priceMul: { diesel: 0.84 }, demandMul: { diesel: 0.88 } },
+    durationTicks: 62,
+    weight: 2,
+  },
+  {
+    id: 'market-down-05',
+    category: 'market-down',
+    source: 'ТСН: Держспоживслужба',
+    headline: 'Надзвичайні новини: на 7-й АЗС Чернігова дешевший ДП пояснили словом «після свят»',
+    body: 'Слово «після свят» тепер офіційне пояснення будь-якої ціни. Економісти знизали плечима й порахували вигоду.',
+    effects: { priceMul: all(0.93), demandMul: all(0.96) },
+    durationTicks: 34,
+    weight: 6,
+  },
+]
