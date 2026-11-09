@@ -86,11 +86,11 @@
     },
     {
       "tick": 75,
-      "balance": 134840.99,
+      "balance": 138108.34,
       "markup": 0.05,
       "reservoirs": {
-        "a92": 886,
-        "a95": 676.11,
+        "a92": 815,
+        "a95": 683.79,
         "diesel": 852.31
       },
       "queueLength": 0,
@@ -101,7 +101,7 @@
         {
           "carId": "car-10",
           "requested": 43.16,
-          "delivered": 6
+          "delivered": 24
         },
         {
           "carId": null,
@@ -120,21 +120,21 @@
         }
       ],
       "stats": {
-        "served": 16,
+        "served": 17,
         "lost": 0,
         "driveBy": 0,
-        "revenue": 34840.99
+        "revenue": 38108.34
       },
       "gameOver": false
     },
     {
       "tick": 100,
-      "balance": 143849.44,
+      "balance": 149706.09,
       "markup": 0.3,
       "reservoirs": {
-        "a92": 1852,
-        "a95": 606.96,
-        "diesel": 792.39
+        "a92": 1751,
+        "a95": 614.63,
+        "diesel": 774.39
       },
       "queueLength": 0,
       "tankersInFlight": [],
@@ -142,58 +142,58 @@
         {
           "carId": "car-11",
           "requested": 39.35,
-          "delivered": 18
+          "delivered": 36
         },
         {
           "carId": "car-12",
           "requested": 42,
+          "delivered": 30
+        },
+        {
+          "carId": "car-13",
+          "requested": 45,
+          "delivered": 18
+        },
+        {
+          "carId": "car-5",
+          "requested": 32,
           "delivered": 12
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
         }
       ],
       "stats": {
-        "served": 20,
+        "served": 21,
         "lost": 0,
         "driveBy": 0,
-        "revenue": 43849.44
+        "revenue": 49706.09
       },
       "gameOver": false
     },
     {
       "tick": 125,
-      "balance": 158314.16,
+      "balance": 162438.13,
       "markup": 0.3,
       "reservoirs": {
-        "a92": 1764,
-        "a95": 502.13,
+        "a92": 1661,
+        "a95": 525.16,
         "diesel": 771.03
       },
       "queueLength": 0,
       "tankersInFlight": [],
       "pumps": [
         {
-          "carId": "car-14",
-          "requested": 28,
-          "delivered": 24
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
         },
         {
           "carId": "car-5",
           "requested": 38,
-          "delivered": 12
+          "delivered": 30
         },
         {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
+          "carId": "car-15",
+          "requested": 29,
+          "delivered": 18
         },
         {
           "carId": null,
@@ -202,21 +202,21 @@
         }
       ],
       "stats": {
-        "served": 26,
+        "served": 28,
         "lost": 0,
         "driveBy": 1,
-        "revenue": 58314.16
+        "revenue": 62438.13
       },
       "gameOver": false
     },
     {
       "tick": 150,
-      "balance": 105647.98,
+      "balance": 109401.68,
       "markup": 0.3,
       "reservoirs": {
-        "a92": 1691,
-        "a95": 438.79,
-        "diesel": 755.69
+        "a92": 1593,
+        "a95": 467.95,
+        "diesel": 749.69
       },
       "queueLength": 0,
       "tankersInFlight": [
@@ -224,14 +224,14 @@
       ],
       "pumps": [
         {
-          "carId": "car-17",
-          "requested": 29,
-          "delivered": 12
-        },
-        {
           "carId": null,
           "requested": 0,
           "delivered": 0
+        },
+        {
+          "carId": "car-18",
+          "requested": 38.68,
+          "delivered": 6
         },
         {
           "carId": null,
@@ -245,21 +245,21 @@
         }
       ],
       "stats": {
-        "served": 33,
+        "served": 35,
         "lost": 0,
         "driveBy": 1,
-        "revenue": 70187.98
+        "revenue": 73941.68
       },
       "gameOver": false
     },
     {
       "tick": 175,
-      "balance": 133825.15,
+      "balance": 133738.52,
       "markup": 0.3,
       "reservoirs": {
-        "a92": 1593.22,
-        "a95": 237.21,
-        "diesel": 695.5
+        "a92": 1510.22,
+        "a95": 330.63,
+        "diesel": 654.24
       },
       "queueLength": 0,
       "tankersInFlight": [
@@ -267,14 +267,14 @@
       ],
       "pumps": [
         {
-          "carId": "car-21",
+          "carId": "car-23",
           "requested": 33,
-          "delivered": 18
+          "delivered": 24
         },
         {
           "carId": "car-6",
           "requested": 43,
-          "delivered": 6
+          "delivered": 12
         },
         {
           "carId": null,
@@ -291,31 +291,31 @@
         "served": 45,
         "lost": 0,
         "driveBy": 2,
-        "revenue": 98365.15
+        "revenue": 98278.52
       },
       "gameOver": false
     },
     {
       "tick": 200,
-      "balance": 152630,
+      "balance": 153116.37,
       "markup": 0,
       "reservoirs": {
-        "a92": 1427.22,
-        "a95": 118.2,
-        "diesel": 1695.5
+        "a92": 1335.3,
+        "a95": 211.63,
+        "diesel": 1654.24
       },
       "queueLength": 0,
       "tankersInFlight": [],
       "pumps": [
         {
-          "carId": "car-26",
+          "carId": "car-28",
           "requested": 17,
-          "delivered": 6
+          "delivered": 12
         },
         {
           "carId": "car-2",
           "requested": 31,
-          "delivered": 18
+          "delivered": 24
         },
         {
           "carId": null,
@@ -332,31 +332,26 @@
         "served": 54,
         "lost": 0,
         "driveBy": 2,
-        "revenue": 117170
+        "revenue": 117656.37
       },
       "gameOver": false
     },
     {
       "tick": 225,
-      "balance": 162674.5,
+      "balance": 162051.87,
       "markup": 0,
       "reservoirs": {
-        "a92": 1346.27,
-        "a95": 3.2,
-        "diesel": 1695.5
+        "a92": 1276.67,
+        "a95": 96.71,
+        "diesel": 1654.24
       },
       "queueLength": 0,
       "tankersInFlight": [],
       "pumps": [
         {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": "car-28",
+          "carId": "car-30",
           "requested": 43,
-          "delivered": 18
+          "delivered": 24
         },
         {
           "carId": null,
@@ -364,70 +359,32 @@
           "delivered": 0
         },
         {
-          "carId": "car-15",
-          "requested": 30,
-          "delivered": 24
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": "car-19",
+          "requested": 42,
+          "delivered": 30
         }
       ],
       "stats": {
         "served": 60,
         "lost": 0,
         "driveBy": 2,
-        "revenue": 127214.5
+        "revenue": 126591.87
       },
       "gameOver": false
     },
     {
       "tick": 250,
-      "balance": 120771.91,
+      "balance": 126009.44,
       "markup": 0,
       "reservoirs": {
-        "a92": 1271.27,
+        "a92": 1195.67,
         "a95": 0,
-        "diesel": 1563.08
-      },
-      "queueLength": 0,
-      "tankersInFlight": [
-        "a95"
-      ],
-      "pumps": [
-        {
-          "carId": "car-32",
-          "requested": 39,
-          "delivered": 24
-        },
-        {
-          "carId": "car-29",
-          "requested": 42.02,
-          "delivered": 36
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        }
-      ],
-      "stats": {
-        "served": 66,
-        "lost": 5,
-        "driveBy": 2,
-        "revenue": 138311.91
-      },
-      "gameOver": false
-    },
-    {
-      "tick": 275,
-      "balance": 131916.41,
-      "markup": 0,
-      "reservoirs": {
-        "a92": 1052.75,
-        "a95": 0,
-        "diesel": 1557.06
+        "diesel": 1509.82
       },
       "queueLength": 0,
       "tankersInFlight": [
@@ -436,18 +393,18 @@
       "pumps": [
         {
           "carId": "car-34",
-          "requested": 37,
-          "delivered": 6
-        },
-        {
-          "carId": "car-35",
           "requested": 39,
-          "delivered": 36
+          "delivered": 30
         },
         {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
+          "carId": "car-31",
+          "requested": 42.02,
+          "delivered": 42
+        },
+        {
+          "carId": "car-9",
+          "requested": 20.31,
+          "delivered": 6
         },
         {
           "carId": null,
@@ -456,33 +413,35 @@
         }
       ],
       "stats": {
-        "served": 73,
-        "lost": 8,
+        "served": 69,
+        "lost": 2,
         "driveBy": 2,
-        "revenue": 149456.41
+        "revenue": 143549.44
       },
       "gameOver": false
     },
     {
-      "tick": 300,
-      "balance": 148903.44,
-      "markup": 0.5,
+      "tick": 275,
+      "balance": 133786.44,
+      "markup": 0,
       "reservoirs": {
-        "a92": 883.75,
-        "a95": 909.44,
-        "diesel": 1511.06
+        "a92": 1054.34,
+        "a95": 0,
+        "diesel": 1495.49
       },
       "queueLength": 0,
-      "tankersInFlight": [],
+      "tankersInFlight": [
+        "a95"
+      ],
       "pumps": [
         {
-          "carId": "car-38",
-          "requested": 28,
-          "delivered": 6
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
         },
         {
-          "carId": "car-31",
-          "requested": 53,
+          "carId": "car-36",
+          "requested": 39,
           "delivered": 30
         },
         {
@@ -491,27 +450,68 @@
           "delivered": 0
         },
         {
-          "carId": "car-18",
-          "requested": 36,
-          "delivered": 24
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
         }
       ],
       "stats": {
-        "served": 81,
-        "lost": 10,
+        "served": 75,
+        "lost": 6,
         "driveBy": 2,
-        "revenue": 166443.44
+        "revenue": 151326.44
+      },
+      "gameOver": false
+    },
+    {
+      "tick": 300,
+      "balance": 155150.44,
+      "markup": 0.5,
+      "reservoirs": {
+        "a92": 879.34,
+        "a95": 872.67,
+        "diesel": 1425.49
+      },
+      "queueLength": 0,
+      "tankersInFlight": [],
+      "pumps": [
+        {
+          "carId": "car-31",
+          "requested": 33.03,
+          "delivered": 24
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": "car-20",
+          "requested": 36,
+          "delivered": 18
+        }
+      ],
+      "stats": {
+        "served": 85,
+        "lost": 6,
+        "driveBy": 2,
+        "revenue": 172690.44
       },
       "gameOver": false
     },
     {
       "tick": 325,
-      "balance": 180341.63,
+      "balance": 185119.41,
       "markup": 0.5,
       "reservoirs": {
-        "a92": 789.24,
-        "a95": 727.6,
-        "diesel": 1406.68
+        "a92": 762.99,
+        "a95": 732.03,
+        "diesel": 1331.24
       },
       "queueLength": 0,
       "tankersInFlight": [],
@@ -522,7 +522,7 @@
           "delivered": 0
         },
         {
-          "carId": "car-41",
+          "carId": "car-42",
           "requested": 26,
           "delivered": 24
         },
@@ -538,21 +538,21 @@
         }
       ],
       "stats": {
-        "served": 94,
-        "lost": 10,
+        "served": 98,
+        "lost": 6,
         "driveBy": 3,
-        "revenue": 197881.63
+        "revenue": 202659.41
       },
       "gameOver": false
     },
     {
       "tick": 350,
-      "balance": 193462.63,
+      "balance": 195069.16,
       "markup": 0.5,
       "reservoirs": {
-        "a92": 759.62,
-        "a95": 621.6,
-        "diesel": 1375.19
+        "a92": 731.99,
+        "a95": 667.6,
+        "diesel": 1299.76
       },
       "queueLength": 0,
       "tankersInFlight": [],
@@ -564,8 +564,8 @@
         },
         {
           "carId": "car-33",
-          "requested": 46,
-          "delivered": 18
+          "requested": 61,
+          "delivered": 12
         },
         {
           "carId": null,
@@ -579,21 +579,21 @@
         }
       ],
       "stats": {
-        "served": 100,
-        "lost": 10,
+        "served": 104,
+        "lost": 6,
         "driveBy": 8,
-        "revenue": 211002.63
+        "revenue": 212609.16
       },
       "gameOver": false
     },
     {
       "tick": 375,
-      "balance": 217908.63,
+      "balance": 220294.16,
       "markup": 0.5,
       "reservoirs": {
-        "a92": 620.74,
-        "a95": 469.6,
-        "diesel": 1348.72
+        "a92": 600.11,
+        "a95": 499.11,
+        "diesel": 1273.29
       },
       "queueLength": 0,
       "tankersInFlight": [],
@@ -620,33 +620,28 @@
         }
       ],
       "stats": {
-        "served": 110,
-        "lost": 10,
+        "served": 114,
+        "lost": 6,
         "driveBy": 14,
-        "revenue": 235448.63
+        "revenue": 237834.16
       },
       "gameOver": false
     },
     {
       "tick": 400,
-      "balance": 232034.71,
+      "balance": 233518.28,
       "markup": 0.5,
       "reservoirs": {
-        "a92": 545.54,
-        "a95": 391.55,
-        "diesel": 1348.72
+        "a92": 529.98,
+        "a95": 425.8,
+        "diesel": 1273.29
       },
       "queueLength": 0,
       "tankersInFlight": [],
       "pumps": [
         {
-          "carId": "car-45",
+          "carId": "car-46",
           "requested": 27.1,
-          "delivered": 18
-        },
-        {
-          "carId": "car-15",
-          "requested": 39,
           "delivered": 12
         },
         {
@@ -655,35 +650,40 @@
           "delivered": 0
         },
         {
-          "carId": "car-47",
-          "requested": 45,
-          "delivered": 6
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": "car-19",
+          "requested": 21.66,
+          "delivered": 12
         }
       ],
       "stats": {
-        "served": 115,
-        "lost": 10,
+        "served": 119,
+        "lost": 6,
         "driveBy": 17,
-        "revenue": 249574.71
+        "revenue": 251058.28
       },
       "gameOver": false
     },
     {
       "tick": 425,
-      "balance": 258258.09,
+      "balance": 259448.79,
       "markup": 0.5,
       "reservoirs": {
-        "a92": 410.05,
-        "a95": 239.68,
-        "diesel": 1348.72
+        "a92": 356.89,
+        "a95": 315.04,
+        "diesel": 1273.29
       },
       "queueLength": 0,
       "tankersInFlight": [],
       "pumps": [
         {
-          "carId": "car-8",
-          "requested": 46,
-          "delivered": 18
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
         },
         {
           "carId": null,
@@ -702,29 +702,29 @@
         }
       ],
       "stats": {
-        "served": 125,
-        "lost": 10,
+        "served": 129,
+        "lost": 6,
         "driveBy": 20,
-        "revenue": 275798.09
+        "revenue": 276988.79
       },
       "gameOver": false
     },
     {
       "tick": 450,
-      "balance": 267147.09,
+      "balance": 268611.54,
       "markup": 0.5,
       "reservoirs": {
-        "a92": 332.52,
-        "a95": 199.91,
-        "diesel": 1348.72
+        "a92": 289.89,
+        "a95": 261.86,
+        "diesel": 1273.29
       },
       "queueLength": 0,
       "tankersInFlight": [],
       "pumps": [
         {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
+          "carId": "car-16",
+          "requested": 24,
+          "delivered": 6
         },
         {
           "carId": null,
@@ -743,39 +743,39 @@
         }
       ],
       "stats": {
-        "served": 130,
-        "lost": 10,
+        "served": 133,
+        "lost": 6,
         "driveBy": 21,
-        "revenue": 284687.09
+        "revenue": 286151.54
       },
       "gameOver": false
     },
     {
       "tick": 475,
-      "balance": 278237.84,
+      "balance": 276225.04,
       "markup": 0.5,
       "reservoirs": {
-        "a92": 308.34,
-        "a95": 111.98,
-        "diesel": 1319.72
+        "a92": 248.76,
+        "a95": 218.91,
+        "diesel": 1258.88
       },
       "queueLength": 0,
       "tankersInFlight": [],
       "pumps": [
         {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": "car-23",
-          "requested": 38,
+          "carId": "car-6",
+          "requested": 22.93,
           "delivered": 18
+        },
+        {
+          "carId": "car-4",
+          "requested": 17.15,
+          "delivered": 6
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
         },
         {
           "carId": null,
@@ -784,51 +784,51 @@
         }
       ],
       "stats": {
-        "served": 135,
-        "lost": 10,
+        "served": 137,
+        "lost": 6,
         "driveBy": 23,
-        "revenue": 295777.84
+        "revenue": 293765.04
       },
       "gameOver": false
     },
     {
       "tick": 500,
-      "balance": 293171.01,
+      "balance": 291706.54,
       "markup": 0.5,
       "reservoirs": {
-        "a92": 273.34,
-        "a95": 0,
-        "diesel": 1276.71
+        "a92": 242.76,
+        "a95": 79.35,
+        "diesel": 1209.4
       },
       "queueLength": 0,
       "tankersInFlight": [],
       "pumps": [
         {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
+          "carId": "car-49",
+          "requested": 20,
+          "delivered": 6
         },
         {
-          "carId": "car-44",
-          "requested": 38,
+          "carId": "car-41",
+          "requested": 28.67,
+          "delivered": 24
+        },
+        {
+          "carId": "car-19",
+          "requested": 27.47,
           "delivered": 12
         },
         {
           "carId": null,
           "requested": 0,
           "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
         }
       ],
       "stats": {
-        "served": 142,
-        "lost": 11,
-        "driveBy": 25,
-        "revenue": 310711.01
+        "served": 144,
+        "lost": 6,
+        "driveBy": 23,
+        "revenue": 309246.54
       },
       "gameOver": false
     }
@@ -920,55 +920,55 @@
     },
     {
       "tick": 75,
-      "balance": 152996,
+      "balance": 146709.73,
       "markup": 0.05,
       "reservoirs": {
-        "a92": 537,
-        "a95": 749,
-        "diesel": 736.21
+        "a92": 576,
+        "a95": 651.8,
+        "diesel": 964
       },
-      "queueLength": 3,
+      "queueLength": 0,
       "tankersInFlight": [
         "a92"
       ],
       "pumps": [
         {
-          "carId": "car-17",
-          "requested": 79,
-          "delivered": 30
-        },
-        {
-          "carId": "car-18",
-          "requested": 29,
-          "delivered": 12
-        },
-        {
-          "carId": "car-16",
-          "requested": 43,
+          "carId": "car-11",
+          "requested": 54.99,
           "delivered": 36
         },
         {
           "carId": null,
           "requested": 0,
           "delivered": 0
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
         }
       ],
       "stats": {
-        "served": 25,
+        "served": 24,
         "lost": 0,
         "driveBy": 0,
-        "revenue": 52996
+        "revenue": 46709.73
       },
       "gameOver": false
     },
     {
       "tick": 100,
-      "balance": 172005.85,
+      "balance": 166906.94,
       "markup": 0.3,
       "reservoirs": {
-        "a92": 1477,
-        "a95": 518.85,
-        "diesel": 680.21
+        "a92": 1413,
+        "a95": 573.8,
+        "diesel": 899.2
       },
       "queueLength": 0,
       "tankersInFlight": [],
@@ -979,14 +979,14 @@
           "delivered": 0
         },
         {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
+          "carId": "car-14",
+          "requested": 32,
+          "delivered": 24
         },
         {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
+          "carId": "car-8",
+          "requested": 22.59,
+          "delivered": 6
         },
         {
           "carId": null,
@@ -995,105 +995,105 @@
         }
       ],
       "stats": {
-        "served": 36,
+        "served": 34,
         "lost": 0,
         "driveBy": 0,
-        "revenue": 72005.85
+        "revenue": 66906.94
       },
       "gameOver": false
     },
     {
       "tick": 125,
-      "balance": 191705.38,
+      "balance": 181008.12,
       "markup": 0.3,
       "reservoirs": {
-        "a92": 1456,
-        "a95": 396.85,
-        "diesel": 554.68
+        "a92": 1388.33,
+        "a95": 450.69,
+        "diesel": 866.25
       },
       "queueLength": 0,
       "tankersInFlight": [],
       "pumps": [
         {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": "car-25",
-          "requested": 32,
+          "carId": "car-17",
+          "requested": 38,
           "delivered": 30
         },
         {
-          "carId": "car-9",
-          "requested": 39,
-          "delivered": 24
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
         }
       ],
       "stats": {
-        "served": 41,
+        "served": 40,
         "lost": 0,
         "driveBy": 1,
-        "revenue": 91705.38
+        "revenue": 81008.12
       },
       "gameOver": false
     },
     {
       "tick": 150,
-      "balance": 173948.07,
+      "balance": 156324.13,
       "markup": 0.3,
       "reservoirs": {
-        "a92": 1211,
-        "a95": 258.85,
-        "diesel": 425.88
+        "a92": 1272.42,
+        "a95": 257.46,
+        "diesel": 788.32
       },
-      "queueLength": 1,
+      "queueLength": 0,
       "tankersInFlight": [
         "diesel"
       ],
       "pumps": [
         {
-          "carId": "car-31",
-          "requested": 26,
-          "delivered": 12
-        },
-        {
-          "carId": "car-27",
-          "requested": 34,
-          "delivered": 12
-        },
-        {
-          "carId": "car-28",
-          "requested": 52,
+          "carId": "car-20",
+          "requested": 45,
           "delivered": 30
         },
         {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
+          "carId": "car-10",
+          "requested": 27,
+          "delivered": 12
+        },
+        {
+          "carId": "car-21",
+          "requested": 43,
+          "delivered": 24
+        },
+        {
+          "carId": "car-9",
+          "requested": 30.13,
+          "delivered": 6
         }
       ],
       "stats": {
-        "served": 55,
+        "served": 52,
         "lost": 0,
-        "driveBy": 1,
-        "revenue": 128948.07
+        "driveBy": 2,
+        "revenue": 111324.13
       },
       "gameOver": false
     },
     {
       "tick": 175,
-      "balance": 195683.86,
+      "balance": 182538.85,
       "markup": 0.3,
       "reservoirs": {
-        "a92": 1084,
-        "a95": 146.61,
-        "diesel": 356.88
+        "a92": 1141.73,
+        "a95": 203.33,
+        "diesel": 616.73
       },
       "queueLength": 0,
       "tankersInFlight": [
@@ -1106,14 +1106,14 @@
           "delivered": 0
         },
         {
-          "carId": "car-24",
-          "requested": 48,
-          "delivered": 42
+          "carId": "car-9",
+          "requested": 21.82,
+          "delivered": 18
         },
         {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
+          "carId": "car-18",
+          "requested": 38,
+          "delivered": 12
         },
         {
           "carId": null,
@@ -1125,31 +1125,31 @@
         "served": 64,
         "lost": 0,
         "driveBy": 2,
-        "revenue": 150683.86
+        "revenue": 137538.85
       },
       "gameOver": false
     },
     {
       "tick": 200,
-      "balance": 210377.76,
+      "balance": 193030.85,
       "markup": 0,
       "reservoirs": {
-        "a92": 946,
-        "a95": 93.61,
-        "diesel": 1325.88
+        "a92": 1044.86,
+        "a95": 161.51,
+        "diesel": 1596.91
       },
       "queueLength": 0,
       "tankersInFlight": [],
       "pumps": [
         {
+          "carId": "car-26",
+          "requested": 35,
+          "delivered": 12
+        },
+        {
           "carId": null,
           "requested": 0,
           "delivered": 0
-        },
-        {
-          "carId": "car-37",
-          "requested": 41,
-          "delivered": 12
         },
         {
           "carId": null,
@@ -1166,36 +1166,36 @@
         "served": 71,
         "lost": 0,
         "driveBy": 2,
-        "revenue": 165377.76
+        "revenue": 148030.85
       },
       "gameOver": false
     },
     {
       "tick": 225,
-      "balance": 225186.56,
+      "balance": 210614.75,
       "markup": 0,
       "reservoirs": {
-        "a92": 885,
+        "a92": 1012.86,
         "a95": 0,
-        "diesel": 1199.73
+        "diesel": 1458.92
       },
       "queueLength": 0,
       "tankersInFlight": [],
       "pumps": [
         {
-          "carId": "car-41",
-          "requested": 29,
-          "delivered": 24
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
         },
         {
-          "carId": "car-42",
-          "requested": 45,
-          "delivered": 18
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
         },
         {
-          "carId": "car-32",
-          "requested": 28,
-          "delivered": 12
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
         },
         {
           "carId": null,
@@ -1204,21 +1204,21 @@
         }
       ],
       "stats": {
-        "served": 79,
-        "lost": 3,
+        "served": 81,
+        "lost": 1,
         "driveBy": 2,
-        "revenue": 180186.56
+        "revenue": 165614.75
       },
       "gameOver": false
     },
     {
       "tick": 250,
-      "balance": 189639.06,
+      "balance": 174423.25,
       "markup": 0,
       "reservoirs": {
-        "a92": 720,
+        "a92": 845.44,
         "a95": 0,
-        "diesel": 1029.36
+        "diesel": 1302.56
       },
       "queueLength": 0,
       "tankersInFlight": [
@@ -1226,13 +1226,13 @@
       ],
       "pumps": [
         {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
+          "carId": "car-35",
+          "requested": 93,
+          "delivered": 84
         },
         {
-          "carId": "car-12",
-          "requested": 21,
+          "carId": "car-36",
+          "requested": 26,
           "delivered": 6
         },
         {
@@ -1247,21 +1247,21 @@
         }
       ],
       "stats": {
-        "served": 90,
-        "lost": 5,
+        "served": 89,
+        "lost": 4,
         "driveBy": 2,
-        "revenue": 197639.06
+        "revenue": 182423.25
       },
       "gameOver": false
     },
     {
       "tick": 275,
-      "balance": 198098.56,
+      "balance": 188264.25,
       "markup": 0,
       "reservoirs": {
-        "a92": 609,
+        "a92": 670.44,
         "a95": 0,
-        "diesel": 974.96
+        "diesel": 1207.54
       },
       "queueLength": 0,
       "tankersInFlight": [
@@ -1269,14 +1269,14 @@
       ],
       "pumps": [
         {
+          "carId": "car-35",
+          "requested": 23.16,
+          "delivered": 12
+        },
+        {
           "carId": null,
           "requested": 0,
           "delivered": 0
-        },
-        {
-          "carId": "car-50",
-          "requested": 31,
-          "delivered": 12
         },
         {
           "carId": null,
@@ -1290,74 +1290,115 @@
         }
       ],
       "stats": {
-        "served": 96,
-        "lost": 10,
+        "served": 99,
+        "lost": 8,
         "driveBy": 2,
-        "revenue": 206098.56
+        "revenue": 196264.25
       },
       "gameOver": false
     },
     {
       "tick": 300,
-      "balance": 213257.06,
+      "balance": 207285.25,
       "markup": 0.5,
       "reservoirs": {
-        "a92": 458,
-        "a95": 958,
-        "diesel": 874.43
+        "a92": 581.44,
+        "a95": 874,
+        "diesel": 1060.74
       },
       "queueLength": 0,
       "tankersInFlight": [],
       "pumps": [
         {
-          "carId": "car-5",
-          "requested": 48,
-          "delivered": 42
-        },
-        {
-          "carId": "car-34",
-          "requested": 75,
-          "delivered": 24
-        },
-        {
-          "carId": "car-32",
-          "requested": 40,
+          "carId": "car-35",
+          "requested": 20.15,
           "delivered": 6
         },
         {
-          "carId": "car-11",
-          "requested": 37.61,
-          "delivered": 12
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": "car-37",
+          "requested": 42,
+          "delivered": 36
+        },
+        {
+          "carId": "car-26",
+          "requested": 39,
+          "delivered": 24
         }
       ],
       "stats": {
-        "served": 104,
-        "lost": 14,
+        "served": 108,
+        "lost": 8,
         "driveBy": 2,
-        "revenue": 221257.06
+        "revenue": 215285.25
       },
       "gameOver": false
     },
     {
       "tick": 325,
-      "balance": 252704.81,
+      "balance": 228674,
       "markup": 0.5,
       "reservoirs": {
-        "a92": 424,
-        "a95": 702.67,
-        "diesel": 668.73
+        "a92": 528.44,
+        "a95": 818.06,
+        "diesel": 901.13
       },
       "queueLength": 0,
       "tankersInFlight": [],
       "pumps": [
         {
-          "carId": "car-17",
-          "requested": 21.15,
-          "delivered": 6
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
         },
         {
-          "carId": "car-39",
+          "carId": "car-45",
+          "requested": 26,
+          "delivered": 24
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": "car-29",
           "requested": 33,
+          "delivered": 6
+        }
+      ],
+      "stats": {
+        "served": 118,
+        "lost": 8,
+        "driveBy": 4,
+        "revenue": 236674
+      },
+      "gameOver": false
+    },
+    {
+      "tick": 350,
+      "balance": 242111.5,
+      "markup": 0.5,
+      "reservoirs": {
+        "a92": 427.44,
+        "a95": 791.06,
+        "diesel": 854.5
+      },
+      "queueLength": 0,
+      "tankersInFlight": [],
+      "pumps": [
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": "car-48",
+          "requested": 42,
           "delivered": 30
         },
         {
@@ -1372,27 +1413,232 @@
         }
       ],
       "stats": {
-        "served": 116,
-        "lost": 14,
-        "driveBy": 7,
-        "revenue": 260704.81
+        "served": 123,
+        "lost": 8,
+        "driveBy": 8,
+        "revenue": 250111.5
       },
       "gameOver": false
     },
     {
-      "tick": 350,
-      "balance": 265078.81,
+      "tick": 375,
+      "balance": 256505.75,
       "markup": 0.5,
       "reservoirs": {
-        "a92": 311,
-        "a95": 699.67,
-        "diesel": 622.89
+        "a92": 305.16,
+        "a95": 723.57,
+        "diesel": 854.5
       },
       "queueLength": 0,
       "tankersInFlight": [],
       "pumps": [
         {
-          "carId": "car-26",
+          "carId": "car-48",
+          "requested": 41,
+          "delivered": 6
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": "car-50",
+          "requested": 36,
+          "delivered": 30
+        },
+        {
+          "carId": "car-29",
+          "requested": 35,
+          "delivered": 18
+        }
+      ],
+      "stats": {
+        "served": 129,
+        "lost": 8,
+        "driveBy": 9,
+        "revenue": 264505.75
+      },
+      "gameOver": false
+    },
+    {
+      "tick": 400,
+      "balance": 274216.64,
+      "markup": 0.5,
+      "reservoirs": {
+        "a92": 165.17,
+        "a95": 706.57,
+        "diesel": 786.75
+      },
+      "queueLength": 0,
+      "tankersInFlight": [],
+      "pumps": [
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": "car-28",
+          "requested": 21.93,
+          "delivered": 18
+        }
+      ],
+      "stats": {
+        "served": 138,
+        "lost": 8,
+        "driveBy": 14,
+        "revenue": 282216.64
+      },
+      "gameOver": false
+    },
+    {
+      "tick": 425,
+      "balance": 281191.77,
+      "markup": 0.5,
+      "reservoirs": {
+        "a92": 165.17,
+        "a95": 637.57,
+        "diesel": 769.67
+      },
+      "queueLength": 0,
+      "tankersInFlight": [],
+      "pumps": [
+        {
+          "carId": "car-30",
+          "requested": 34,
+          "delivered": 30
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        }
+      ],
+      "stats": {
+        "served": 141,
+        "lost": 8,
+        "driveBy": 17,
+        "revenue": 289191.77
+      },
+      "gameOver": false
+    },
+    {
+      "tick": 450,
+      "balance": 295830.71,
+      "markup": 0.5,
+      "reservoirs": {
+        "a92": 0,
+        "a95": 607.42,
+        "diesel": 769.67
+      },
+      "queueLength": 0,
+      "tankersInFlight": [],
+      "pumps": [
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        }
+      ],
+      "stats": {
+        "served": 150,
+        "lost": 8,
+        "driveBy": 19,
+        "revenue": 303830.71
+      },
+      "gameOver": false
+    },
+    {
+      "tick": 475,
+      "balance": 303545.46,
+      "markup": 0.5,
+      "reservoirs": {
+        "a92": 0,
+        "a95": 528.14,
+        "diesel": 751.67
+      },
+      "queueLength": 0,
+      "tankersInFlight": [],
+      "pumps": [
+        {
+          "carId": "car-35",
+          "requested": 22.17,
+          "delivered": 18
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        }
+      ],
+      "stats": {
+        "served": 153,
+        "lost": 12,
+        "driveBy": 20,
+        "revenue": 311545.46
+      },
+      "gameOver": false
+    },
+    {
+      "tick": 500,
+      "balance": 308292.46,
+      "markup": 0.5,
+      "reservoirs": {
+        "a92": 0,
+        "a95": 510.14,
+        "diesel": 710.95
+      },
+      "queueLength": 0,
+      "tankersInFlight": [],
+      "pumps": [
+        {
+          "carId": "car-37",
           "requested": 35,
           "delivered": 18
         },
@@ -1413,256 +1659,10 @@
         }
       ],
       "stats": {
-        "served": 122,
-        "lost": 14,
-        "driveBy": 14,
-        "revenue": 273078.81
-      },
-      "gameOver": false
-    },
-    {
-      "tick": 375,
-      "balance": 284424.31,
-      "markup": 0.5,
-      "reservoirs": {
-        "a92": 200,
-        "a95": 558.67,
-        "diesel": 622.89
-      },
-      "queueLength": 0,
-      "tankersInFlight": [],
-      "pumps": [
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        }
-      ],
-      "stats": {
-        "served": 129,
-        "lost": 14,
-        "driveBy": 15,
-        "revenue": 292424.31
-      },
-      "gameOver": false
-    },
-    {
-      "tick": 400,
-      "balance": 302660.53,
-      "markup": 0.5,
-      "reservoirs": {
-        "a92": 45,
-        "a95": 558.67,
-        "diesel": 556.89
-      },
-      "queueLength": 0,
-      "tankersInFlight": [],
-      "pumps": [
-        {
-          "carId": "car-45",
-          "requested": 62.45,
-          "delivered": 30
-        },
-        {
-          "carId": "car-25",
-          "requested": 41,
-          "delivered": 24
-        },
-        {
-          "carId": "car-46",
-          "requested": 29,
-          "delivered": 18
-        },
-        {
-          "carId": "car-17",
-          "requested": 56.9,
-          "delivered": 12
-        }
-      ],
-      "stats": {
-        "served": 133,
-        "lost": 14,
-        "driveBy": 20,
-        "revenue": 310660.53
-      },
-      "gameOver": false
-    },
-    {
-      "tick": 425,
-      "balance": 317443.4,
-      "markup": 0.5,
-      "reservoirs": {
-        "a92": 34,
-        "a95": 495.67,
-        "diesel": 457.12
-      },
-      "queueLength": 0,
-      "tankersInFlight": [],
-      "pumps": [
-        {
-          "carId": "car-37",
-          "requested": 33,
-          "delivered": 24
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        }
-      ],
-      "stats": {
-        "served": 139,
-        "lost": 14,
-        "driveBy": 23,
-        "revenue": 325443.4
-      },
-      "gameOver": false
-    },
-    {
-      "tick": 450,
-      "balance": 325322.9,
-      "markup": 0.5,
-      "reservoirs": {
-        "a92": 0,
-        "a95": 427.67,
-        "diesel": 457.12
-      },
-      "queueLength": 0,
-      "tankersInFlight": [],
-      "pumps": [
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        }
-      ],
-      "stats": {
-        "served": 143,
-        "lost": 19,
-        "driveBy": 25,
-        "revenue": 333322.9
-      },
-      "gameOver": false
-    },
-    {
-      "tick": 475,
-      "balance": 332722.15,
-      "markup": 0.5,
-      "reservoirs": {
-        "a92": 0,
-        "a95": 346.17,
-        "diesel": 445.12
-      },
-      "queueLength": 0,
-      "tankersInFlight": [],
-      "pumps": [
-        {
-          "carId": "car-38",
-          "requested": 49.58,
-          "delivered": 12
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        }
-      ],
-      "stats": {
-        "served": 146,
-        "lost": 23,
-        "driveBy": 26,
-        "revenue": 340722.15
-      },
-      "gameOver": false
-    },
-    {
-      "tick": 500,
-      "balance": 342407.4,
-      "markup": 0.5,
-      "reservoirs": {
-        "a92": 0,
-        "a95": 334.17,
-        "diesel": 338.2
-      },
-      "queueLength": 0,
-      "tankersInFlight": [],
-      "pumps": [
-        {
-          "carId": "car-40",
-          "requested": 34,
-          "delivered": 12
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        }
-      ],
-      "stats": {
-        "served": 149,
-        "lost": 26,
-        "driveBy": 28,
-        "revenue": 350407.4
+        "served": 156,
+        "lost": 15,
+        "driveBy": 22,
+        "revenue": 316292.46
       },
       "gameOver": false
     }
@@ -1754,12 +1754,12 @@
     },
     {
       "tick": 75,
-      "balance": 148913.52,
+      "balance": 142970.72,
       "markup": 0.05,
       "reservoirs": {
-        "a92": 611.8,
-        "a95": 654.4,
-        "diesel": 801.22
+        "a92": 609.94,
+        "a95": 696.4,
+        "diesel": 842.34
       },
       "queueLength": 0,
       "tankersInFlight": [
@@ -1767,9 +1767,50 @@
       ],
       "pumps": [
         {
-          "carId": "car-9",
-          "requested": 34,
-          "delivered": 30
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": "car-12",
+          "requested": 47.97,
+          "delivered": 36
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        }
+      ],
+      "stats": {
+        "served": 23,
+        "lost": 0,
+        "driveBy": 0,
+        "revenue": 52570.72
+      },
+      "gameOver": false
+    },
+    {
+      "tick": 100,
+      "balance": 154510.84,
+      "markup": 0.3,
+      "reservoirs": {
+        "a92": 1503.47,
+        "a95": 629.4,
+        "diesel": 801.92
+      },
+      "queueLength": 0,
+      "tankersInFlight": [],
+      "pumps": [
+        {
+          "carId": "car-2",
+          "requested": 28.78,
+          "delivered": 6
         },
         {
           "carId": null,
@@ -1788,21 +1829,189 @@
         }
       ],
       "stats": {
-        "served": 25,
+        "served": 31,
         "lost": 0,
         "driveBy": 0,
-        "revenue": 58513.52
+        "revenue": 64110.84
       },
       "gameOver": false
     },
     {
-      "tick": 100,
-      "balance": 160448.35,
+      "tick": 125,
+      "balance": 166699.88,
       "markup": 0.3,
       "reservoirs": {
-        "a92": 1511.34,
-        "a95": 569.4,
-        "diesel": 772.77
+        "a92": 1440.69,
+        "a95": 522.46,
+        "diesel": 789.92
+      },
+      "queueLength": 0,
+      "tankersInFlight": [],
+      "pumps": [
+        {
+          "carId": "car-12",
+          "requested": 12.89,
+          "delivered": 12
+        },
+        {
+          "carId": "car-15",
+          "requested": 51.18,
+          "delivered": 6
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        }
+      ],
+      "stats": {
+        "served": 36,
+        "lost": 0,
+        "driveBy": 1,
+        "revenue": 76299.88
+      },
+      "gameOver": false
+    },
+    {
+      "tick": 150,
+      "balance": 135749.93,
+      "markup": 0.3,
+      "reservoirs": {
+        "a92": 1368.66,
+        "a95": 316.68,
+        "diesel": 714.11
+      },
+      "queueLength": 0,
+      "tankersInFlight": [
+        "diesel"
+      ],
+      "pumps": [
+        {
+          "carId": "car-16",
+          "requested": 32.79,
+          "delivered": 12
+        },
+        {
+          "carId": "car-20",
+          "requested": 30,
+          "delivered": 6
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        }
+      ],
+      "stats": {
+        "served": 47,
+        "lost": 0,
+        "driveBy": 3,
+        "revenue": 100349.93
+      },
+      "gameOver": false
+    },
+    {
+      "tick": 175,
+      "balance": 155649.6,
+      "markup": 0.3,
+      "reservoirs": {
+        "a92": 1285.66,
+        "a95": 230.23,
+        "diesel": 617.32
+      },
+      "queueLength": 0,
+      "tankersInFlight": [
+        "diesel"
+      ],
+      "pumps": [
+        {
+          "carId": "car-7",
+          "requested": 24.67,
+          "delivered": 18
+        },
+        {
+          "carId": "car-23",
+          "requested": 50,
+          "delivered": 12
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        }
+      ],
+      "stats": {
+        "served": 55,
+        "lost": 0,
+        "driveBy": 3,
+        "revenue": 120249.6
+      },
+      "gameOver": false
+    },
+    {
+      "tick": 200,
+      "balance": 187873.54,
+      "markup": 0,
+      "reservoirs": {
+        "a92": 1119.66,
+        "a95": 50.48,
+        "diesel": 1513.64
+      },
+      "queueLength": 0,
+      "tankersInFlight": [],
+      "pumps": [
+        {
+          "carId": "car-29",
+          "requested": 34.78,
+          "delivered": 18
+        },
+        {
+          "carId": "car-30",
+          "requested": 29,
+          "delivered": 12
+        },
+        {
+          "carId": "car-24",
+          "requested": 28,
+          "delivered": 6
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        }
+      ],
+      "stats": {
+        "served": 69,
+        "lost": 0,
+        "driveBy": 3,
+        "revenue": 152473.54
+      },
+      "gameOver": false
+    },
+    {
+      "tick": 225,
+      "balance": 202868.87,
+      "markup": 0,
+      "reservoirs": {
+        "a92": 937.66,
+        "a95": 0,
+        "diesel": 1452.43
       },
       "queueLength": 0,
       "tankersInFlight": [],
@@ -1813,8 +2022,94 @@
           "delivered": 0
         },
         {
-          "carId": "car-10",
-          "requested": 30,
+          "carId": "car-9",
+          "requested": 31,
+          "delivered": 30
+        },
+        {
+          "carId": "car-25",
+          "requested": 20.9,
+          "delivered": 12
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        }
+      ],
+      "stats": {
+        "served": 80,
+        "lost": 1,
+        "driveBy": 3,
+        "revenue": 167468.87
+      },
+      "gameOver": false
+    },
+    {
+      "tick": 250,
+      "balance": 156605.87,
+      "markup": 0,
+      "reservoirs": {
+        "a92": 853.66,
+        "a95": 0,
+        "diesel": 1405.11
+      },
+      "queueLength": 0,
+      "tankersInFlight": [
+        "a95"
+      ],
+      "pumps": [
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        }
+      ],
+      "stats": {
+        "served": 87,
+        "lost": 5,
+        "driveBy": 3,
+        "revenue": 174205.87
+      },
+      "gameOver": false
+    },
+    {
+      "tick": 275,
+      "balance": 170057.87,
+      "markup": 0,
+      "reservoirs": {
+        "a92": 774.29,
+        "a95": 0,
+        "diesel": 1230.38
+      },
+      "queueLength": 0,
+      "tankersInFlight": [
+        "a95"
+      ],
+      "pumps": [
+        {
+          "carId": "car-11",
+          "requested": 39.72,
+          "delivered": 18
+        },
+        {
+          "carId": "car-20",
+          "requested": 21,
           "delivered": 18
         },
         {
@@ -1829,323 +2124,28 @@
         }
       ],
       "stats": {
-        "served": 33,
-        "lost": 0,
-        "driveBy": 0,
-        "revenue": 70048.35
-      },
-      "gameOver": false
-    },
-    {
-      "tick": 125,
-      "balance": 174214.55,
-      "markup": 0.3,
-      "reservoirs": {
-        "a92": 1471.34,
-        "a95": 431.24,
-        "diesel": 747.89
-      },
-      "queueLength": 0,
-      "tankersInFlight": [],
-      "pumps": [
-        {
-          "carId": "car-17",
-          "requested": 35,
-          "delivered": 24
-        },
-        {
-          "carId": "car-16",
-          "requested": 51.18,
-          "delivered": 36
-        },
-        {
-          "carId": "car-13",
-          "requested": 27.71,
-          "delivered": 12
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        }
-      ],
-      "stats": {
-        "served": 38,
-        "lost": 0,
-        "driveBy": 1,
-        "revenue": 83814.55
-      },
-      "gameOver": false
-    },
-    {
-      "tick": 150,
-      "balance": 129991.7,
-      "markup": 0.3,
-      "reservoirs": {
-        "a92": 1358.93,
-        "a95": 239.56,
-        "diesel": 680.55
-      },
-      "queueLength": 0,
-      "tankersInFlight": [
-        "diesel"
-      ],
-      "pumps": [
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": "car-19",
-          "requested": 39,
-          "delivered": 12
-        }
-      ],
-      "stats": {
-        "served": 51,
-        "lost": 0,
+        "served": 92,
+        "lost": 7,
         "driveBy": 3,
-        "revenue": 108901.7
-      },
-      "gameOver": false
-    },
-    {
-      "tick": 175,
-      "balance": 147843.45,
-      "markup": 0.3,
-      "reservoirs": {
-        "a92": 1283.93,
-        "a95": 81.04,
-        "diesel": 655.88
-      },
-      "queueLength": 0,
-      "tankersInFlight": [
-        "diesel"
-      ],
-      "pumps": [
-        {
-          "carId": "car-16",
-          "requested": 21.49,
-          "delivered": 12
-        },
-        {
-          "carId": "car-23",
-          "requested": 50,
-          "delivered": 42
-        },
-        {
-          "carId": "car-15",
-          "requested": 36,
-          "delivered": 6
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        }
-      ],
-      "stats": {
-        "served": 58,
-        "lost": 0,
-        "driveBy": 4,
-        "revenue": 126753.45
-      },
-      "gameOver": false
-    },
-    {
-      "tick": 200,
-      "balance": 173441.57,
-      "markup": 0,
-      "reservoirs": {
-        "a92": 1106.93,
-        "a95": 0,
-        "diesel": 1558.88
-      },
-      "queueLength": 0,
-      "tankersInFlight": [],
-      "pumps": [
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        }
-      ],
-      "stats": {
-        "served": 72,
-        "lost": 1,
-        "driveBy": 4,
-        "revenue": 152351.57
-      },
-      "gameOver": false
-    },
-    {
-      "tick": 225,
-      "balance": 185243.57,
-      "markup": 0,
-      "reservoirs": {
-        "a92": 956.93,
-        "a95": 0,
-        "diesel": 1478.57
-      },
-      "queueLength": 0,
-      "tankersInFlight": [],
-      "pumps": [
-        {
-          "carId": "car-26",
-          "requested": 28,
-          "delivered": 6
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        }
-      ],
-      "stats": {
-        "served": 80,
-        "lost": 4,
-        "driveBy": 4,
-        "revenue": 164153.57
-      },
-      "gameOver": false
-    },
-    {
-      "tick": 250,
-      "balance": 138149.07,
-      "markup": 0,
-      "reservoirs": {
-        "a92": 879.93,
-        "a95": 0,
-        "diesel": 1440.14
-      },
-      "queueLength": 0,
-      "tankersInFlight": [
-        "a95"
-      ],
-      "pumps": [
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        }
-      ],
-      "stats": {
-        "served": 85,
-        "lost": 8,
-        "driveBy": 4,
-        "revenue": 170059.07
-      },
-      "gameOver": false
-    },
-    {
-      "tick": 275,
-      "balance": 144055.07,
-      "markup": 0,
-      "reservoirs": {
-        "a92": 788.22,
-        "a95": 0,
-        "diesel": 1415.08
-      },
-      "queueLength": 0,
-      "tankersInFlight": [
-        "a95"
-      ],
-      "pumps": [
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        }
-      ],
-      "stats": {
-        "served": 89,
-        "lost": 12,
-        "driveBy": 4,
-        "revenue": 175965.07
+        "revenue": 187657.87
       },
       "gameOver": false
     },
     {
       "tick": 300,
-      "balance": 158597.57,
+      "balance": 189499.87,
       "markup": 0.5,
       "reservoirs": {
-        "a92": 693.02,
-        "a95": 900,
-        "diesel": 1331.04
+        "a92": 638.57,
+        "a95": 844.88,
+        "diesel": 1146.34
       },
       "queueLength": 0,
       "tankersInFlight": [],
       "pumps": [
         {
-          "carId": "car-31",
-          "requested": 42,
+          "carId": "car-29",
+          "requested": 24.97,
           "delivered": 24
         },
         {
@@ -2165,27 +2165,27 @@
         }
       ],
       "stats": {
-        "served": 95,
-        "lost": 14,
-        "driveBy": 4,
-        "revenue": 190507.57
+        "served": 102,
+        "lost": 7,
+        "driveBy": 3,
+        "revenue": 207099.87
       },
       "gameOver": false
     },
     {
       "tick": 325,
-      "balance": 184630.07,
+      "balance": 214191.37,
       "markup": 0.5,
       "reservoirs": {
-        "a92": 574.79,
-        "a95": 798,
-        "diesel": 1218.24
+        "a92": 520.35,
+        "a95": 759.9,
+        "diesel": 1033.53
       },
       "queueLength": 0,
       "tankersInFlight": [],
       "pumps": [
         {
-          "carId": "car-42",
+          "carId": "car-44",
           "requested": 43,
           "delivered": 36
         },
@@ -2195,8 +2195,8 @@
           "delivered": 0
         },
         {
-          "carId": "car-34",
-          "requested": 29,
+          "carId": "car-35",
+          "requested": 25.82,
           "delivered": 6
         },
         {
@@ -2206,32 +2206,32 @@
         }
       ],
       "stats": {
-        "served": 105,
-        "lost": 14,
-        "driveBy": 7,
-        "revenue": 216540.07
+        "served": 112,
+        "lost": 7,
+        "driveBy": 6,
+        "revenue": 231791.37
       },
       "gameOver": false
     },
     {
       "tick": 350,
-      "balance": 196396.07,
+      "balance": 224426.37,
       "markup": 0.5,
       "reservoirs": {
-        "a92": 475.72,
-        "a95": 742,
-        "diesel": 1218.24
+        "a92": 424.46,
+        "a95": 720.35,
+        "diesel": 1033.53
       },
       "queueLength": 0,
       "tankersInFlight": [],
       "pumps": [
         {
-          "carId": "car-46",
+          "carId": "car-48",
           "requested": 27.43,
           "delivered": 18
         },
         {
-          "carId": "car-38",
+          "carId": "car-40",
           "requested": 24.61,
           "delivered": 12
         },
@@ -2247,21 +2247,21 @@
         }
       ],
       "stats": {
-        "served": 110,
-        "lost": 14,
-        "driveBy": 10,
-        "revenue": 228306.07
+        "served": 117,
+        "lost": 7,
+        "driveBy": 9,
+        "revenue": 242026.37
       },
       "gameOver": false
     },
     {
       "tick": 375,
-      "balance": 206967.82,
+      "balance": 233434.87,
       "markup": 0.5,
       "reservoirs": {
-        "a92": 443.58,
-        "a95": 694.39,
-        "diesel": 1163.97
+        "a92": 392.32,
+        "a95": 692.59,
+        "diesel": 979.27
       },
       "queueLength": 0,
       "tankersInFlight": [],
@@ -2275,47 +2275,6 @@
           "carId": null,
           "requested": 0,
           "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        }
-      ],
-      "stats": {
-        "served": 117,
-        "lost": 14,
-        "driveBy": 15,
-        "revenue": 238877.82
-      },
-      "gameOver": false
-    },
-    {
-      "tick": 400,
-      "balance": 224399.57,
-      "markup": 0.5,
-      "reservoirs": {
-        "a92": 346.82,
-        "a95": 627.57,
-        "diesel": 1102.99
-      },
-      "queueLength": 0,
-      "tankersInFlight": [],
-      "pumps": [
-        {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
-        },
-        {
-          "carId": "car-50",
-          "requested": 24,
-          "delivered": 12
         },
         {
           "carId": null,
@@ -2330,20 +2289,61 @@
       ],
       "stats": {
         "served": 124,
-        "lost": 14,
-        "driveBy": 20,
-        "revenue": 256309.57
+        "lost": 7,
+        "driveBy": 14,
+        "revenue": 251034.87
+      },
+      "gameOver": false
+    },
+    {
+      "tick": 400,
+      "balance": 250776.37,
+      "markup": 0.5,
+      "reservoirs": {
+        "a92": 316.05,
+        "a95": 622.78,
+        "diesel": 903.66
+      },
+      "queueLength": 0,
+      "tankersInFlight": [],
+      "pumps": [
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": "car-2",
+          "requested": 28.07,
+          "delivered": 24
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        },
+        {
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
+        }
+      ],
+      "stats": {
+        "served": 130,
+        "lost": 7,
+        "driveBy": 17,
+        "revenue": 268376.37
       },
       "gameOver": false
     },
     {
       "tick": 425,
-      "balance": 237981.07,
+      "balance": 266751.62,
       "markup": 0.5,
       "reservoirs": {
-        "a92": 219.22,
-        "a95": 595.98,
-        "diesel": 1083.18
+        "a92": 134.4,
+        "a95": 591.19,
+        "diesel": 903.66
       },
       "queueLength": 0,
       "tankersInFlight": [],
@@ -2370,21 +2370,21 @@
         }
       ],
       "stats": {
-        "served": 131,
-        "lost": 14,
-        "driveBy": 21,
-        "revenue": 269891.07
+        "served": 139,
+        "lost": 7,
+        "driveBy": 19,
+        "revenue": 284351.62
       },
       "gameOver": false
     },
     {
       "tick": 450,
-      "balance": 252183.32,
+      "balance": 281658.37,
       "markup": 0.5,
       "reservoirs": {
-        "a92": 140.82,
-        "a95": 506.31,
-        "diesel": 1067.04
+        "a92": 44.81,
+        "a95": 510.19,
+        "diesel": 880.71
       },
       "queueLength": 0,
       "tankersInFlight": [],
@@ -2401,39 +2401,39 @@
         },
         {
           "carId": "car-28",
-          "requested": 45,
-          "delivered": 30
+          "requested": 28.57,
+          "delivered": 24
         },
         {
-          "carId": null,
-          "requested": 0,
-          "delivered": 0
+          "carId": "car-23",
+          "requested": 14.67,
+          "delivered": 12
         }
       ],
       "stats": {
-        "served": 138,
-        "lost": 14,
-        "driveBy": 23,
-        "revenue": 284093.32
+        "served": 145,
+        "lost": 7,
+        "driveBy": 21,
+        "revenue": 299258.37
       },
       "gameOver": false
     },
     {
       "tick": 475,
-      "balance": 264535.07,
+      "balance": 291895.76,
       "markup": 0.5,
       "reservoirs": {
-        "a92": 86.82,
-        "a95": 400.38,
-        "diesel": 1067.04
+        "a92": 0,
+        "a95": 422.44,
+        "diesel": 880.71
       },
       "queueLength": 0,
       "tankersInFlight": [],
       "pumps": [
         {
-          "carId": "car-35",
-          "requested": 32,
-          "delivered": 30
+          "carId": "car-33",
+          "requested": 41,
+          "delivered": 24
         },
         {
           "carId": null,
@@ -2443,43 +2443,43 @@
         {
           "carId": "car-10",
           "requested": 40,
-          "delivered": 18
+          "delivered": 12
         },
         {
-          "carId": "car-9",
-          "requested": 25,
-          "delivered": 6
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
         }
       ],
       "stats": {
-        "served": 143,
-        "lost": 14,
-        "driveBy": 25,
-        "revenue": 296445.07
+        "served": 151,
+        "lost": 7,
+        "driveBy": 23,
+        "revenue": 309495.76
       },
       "gameOver": false
     },
     {
       "tick": 500,
-      "balance": 276534.23,
+      "balance": 300317.01,
       "markup": 0.5,
       "reservoirs": {
         "a92": 0,
-        "a95": 364.38,
-        "diesel": 1033.8
+        "a95": 371.44,
+        "diesel": 826.83
       },
       "queueLength": 0,
       "tankersInFlight": [],
       "pumps": [
         {
-          "carId": "car-20",
+          "carId": "car-16",
           "requested": 17.65,
-          "delivered": 12
+          "delivered": 6
         },
         {
-          "carId": "car-25",
-          "requested": 11.93,
-          "delivered": 6
+          "carId": null,
+          "requested": 0,
+          "delivered": 0
         },
         {
           "carId": null,
@@ -2493,10 +2493,10 @@
         }
       ],
       "stats": {
-        "served": 150,
-        "lost": 17,
-        "driveBy": 26,
-        "revenue": 308444.23
+        "served": 154,
+        "lost": 14,
+        "driveBy": 24,
+        "revenue": 317917.01
       },
       "gameOver": false
     }

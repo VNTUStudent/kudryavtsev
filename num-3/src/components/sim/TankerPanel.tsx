@@ -7,6 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { FUEL_LABELS, FUEL_TYPES, TANKER_FEE, TANKER_LITERS } from '@/lib/sim/constants'
 import { fmtLiters, fmtMoney } from '@/lib/sim/format'
 import { wholesalePrice } from '@/lib/sim/market'
+import { tankerRemainingTicks } from '@/lib/sim/routing/route-selectors'
 import { useSimStore } from '@/lib/sim/store'
 import { etaLabel } from '@/lib/sim/time'
 
@@ -49,9 +50,12 @@ export function TankerPanel() {
               >
                 <span className="flex items-center gap-1.5">
                   <Truck className="size-3.5" />
-                  {FUEL_LABELS[tanker.fuelType]} · {fmtLiters(tanker.liters)}
+                  {FUEL_LABELS[tanker.fuelType]} · {fmtLiters(tanker.liters)} ·{' '}
+                  {tanker.route.nodeIds.length - 1} ділянок
                 </span>
-                <Badge variant="secondary">Через {etaLabel(tanker.etaTicks)}</Badge>
+                <Badge variant="secondary">
+                  {etaLabel(tankerRemainingTicks(tanker, state.tick))}
+                </Badge>
               </div>
             ))}
           </div>

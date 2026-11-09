@@ -50,6 +50,24 @@ export const TANKER_LITERS = 1000
 export const TANKER_FEE = 2000
 export const TANKER_ETA_MIN = 30
 export const TANKER_ETA_MAX = 45
+export const DEPOT_NODE_ID = 'depot'
+export const STATION_NODE_ID = 'station'
+export type RoadLinkSpec = readonly [from: string, to: string, ticks: number]
+export const ROAD_LINKS: readonly RoadLinkSpec[] = [
+  ['depot', 'junction-highway', 12],
+  ['junction-highway', 'station', 14],
+  ['depot', 'junction-bridge', 18],
+  ['junction-bridge', 'junction-ring', 10],
+  ['junction-ring', 'station', 8],
+  ['junction-highway', 'junction-bridge', 9],
+]
+export const ROAD_NODE_LABELS: Record<string, string> = {
+  depot: 'Нафтобаза',
+  station: 'АЗС',
+  'junction-highway': 'Траса',
+  'junction-bridge': 'Міст',
+  'junction-ring': 'Обїзна',
+}
 export const START_BALANCE = 150000
 export const BANKRUPTCY_LIMIT = -50000
 export const MARKUP_MIN = -0.2

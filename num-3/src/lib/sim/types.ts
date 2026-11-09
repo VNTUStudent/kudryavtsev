@@ -39,6 +39,8 @@ export interface NewsItem {
 
 export type HistoryKind = 'arrived' | 'refueled' | 'left'
 
+import type { Route } from './routing/types'
+
 export interface HistoryEntry {
   tick: number
   kind: HistoryKind
@@ -78,7 +80,8 @@ export interface Tanker {
   id: string
   fuelType: FuelType
   liters: number
-  etaTicks: number
+  route: Route
+  departedTick: number
   cost: number
 }
 

@@ -10,6 +10,7 @@ import { ControlsBar } from '@/components/sim/ControlsBar'
 import { FuelCard } from '@/components/sim/FuelCard'
 import { GameOver } from '@/components/sim/GameOver'
 import { MarkupSlider } from '@/components/sim/MarkupSlider'
+import { RouteMap } from '@/components/sim/RouteMap'
 import { SimDriver } from '@/components/sim/SimDriver'
 import { StationStats } from '@/components/sim/StationStats'
 import { TankerPanel } from '@/components/sim/TankerPanel'
@@ -30,6 +31,7 @@ export default function Home() {
             <FuelCard />
             <MarkupSlider />
             <TankerPanel />
+            <RouteMap />
             <StationStats />
           </div>
           <div className="lg:relative">

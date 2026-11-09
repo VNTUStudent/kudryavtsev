@@ -16,6 +16,7 @@ import { PriceTotem } from './PriceTotem'
 import { PumpSprite, RefuelBadge } from './PumpSprite'
 import { Shop } from './Shop'
 import { Sky } from './Sky'
+import { tankerProgress } from '@/lib/sim/routing/route-selectors'
 import { TankerSprite } from './TankerSprite'
 
 interface SceneCar {
@@ -52,22 +53,9 @@ export function StationScene({ onSelectCar }: { onSelectCar: (carId: string) => 
   }, [state.pumps, state.queue, state.cars])
 
   const [ghosts, setGhosts] = useState<Car[]>([])
-  const [tankerStarts, setTankerStarts] = useState<Record<string, number>>({})
 
   useEffect(() => {
     const unsubscribe = useSimStore.subscribe((snapshot, previous) => {
-      if (snapshot.tick < previous.tick) setTankerStarts({})
-      setTankerStarts((starts) => {
-        let changed = false
-        const next = { ...starts }
-        for (const tanker of snapshot.tankers) {
-          if (next[tanker.id] === undefined) {
-            next[tanker.id] = tanker.etaTicks
-            changed = true
-          }
-        }
-        return changed ? next : starts
-      })
       const currentIds = new Set(collectCars(snapshot).map((car) => car.id))
       const gone = collectCars(previous).filter((car) => !currentIds.has(car.id))
       if (gone.length === 0) return
@@ -106,17 +94,14 @@ export function StationScene({ onSelectCar }: { onSelectCar: (carId: string) => 
           fuelType={carsByPump[index]?.fuelType ?? null}
         />
       ))}
-      {state.tankers.map((tanker) => {
-        const start = tankerStarts[tanker.id] ?? tanker.etaTicks
-        return (
-          <TankerSprite
-            key={tanker.id}
-            tanker={tanker}
-            progress={1 - tanker.etaTicks / start}
-            night={night}
-          />
-        )
-      })}
+      {state.tankers.map((tanker) => (
+        <TankerSprite
+          key={tanker.id}
+          tanker={tanker}
+          progress={tankerProgress(tanker, state.tick)}
+          night={night}
+        />
+      ))}
       {allCars.map(({ car, x, exiting }) => (
         <CarView
           key={car.id}

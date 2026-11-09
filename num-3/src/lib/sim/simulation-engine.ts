@@ -9,9 +9,10 @@ import { QueueSystem } from './systems/queue-system'
 import { RefuelSystem } from './systems/refuel-system'
 import { SpawnSystem } from './systems/spawn-system'
 import { TankerSystem } from './systems/tanker-system'
+import { DijkstraRouteFinder } from './routing/dijkstra-route-finder'
 
 export class SimulationEngine {
-  private readonly tanker = new TankerSystem()
+  private readonly tanker = new TankerSystem(new DijkstraRouteFinder())
 
   private readonly systems: readonly ISimSystem[] = [
     new NewsSystem(),
