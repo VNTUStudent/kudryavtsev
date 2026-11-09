@@ -1,8 +1,8 @@
-# АЗС «Трембіта» v2 — Gas Station Simulator
+# АЗС «Трембіта» v3 — Gas Station Simulator
 
 Browser-based Ukrainian gas station management sim. Fully client-side: no backend, no database — the whole game lives in a zustand store driven by a tick engine.
 
-Лабораторна №2: поведінка гри ідентична num-1, архітектура ядра переписана в ООП-стилі — модифікатори доступу, наслідування, поліморфізм, кожен клас в окремому файлі.
+Lab num-3 builds on the num-2 core with **interfaces**, **file-based logging** (input: JSON scenario import, output: NDJSON journal export), **testing** (`bun test`), and a **road network graph** — tankers now drive the route found by Dijkstra's algorithm.
 
 ## Run
 
@@ -11,46 +11,44 @@ bun install
 bun dev
 ```
 
-Build: `bun run build` · Lint: `bun run lint` · Typecheck: `bunx tsc --noEmit`
+Build: `bun run build` · Lint: `bun run lint` · Typecheck: `bunx tsc --noEmit` · Tests: `bun test`
 
 ## Gameplay
 
-Unchanged from num-1:
+Everything from num-1/num-2 stays: 4 pumps, 3 fuels, queues, wallets, ТСН news events, markup control, bankruptcy at −50 000 ₴.
 
-- 4 fuel pumps serve 3 fuels (А-92, А-95, ДП), each with its own 2000 L reservoir
-- Cars spawn per tick, queue, refuel, pay, leave — every car is a persistent entity with wallet, tank, stats and visit history (click any car to inspect)
-- Order benzovozes (1000 L) to refill reservoirs; they arrive after 30–45 ticks
-- Satirical ТСН news events drive the market: price multipliers on wholesale, demand spikes, pump breakdowns, VIP guests with fat wallets, and rare crisis events («Трамп вторгся в Іран»)
-- Player controls the global markup (−20%…+80%)
-- Bankruptcy at −50 000 ₴ → «Вас мобілізували»
+New in v3:
 
-## OOP architecture
+- **Routing graph** — a tanker no longer pops onto the lane with a random ETA: ordering builds a weighted graph (depot → junctions → station, edge weight = travel ticks), `DijkstraRouteFinder` picks the cheapest route, and the «Дорожня мережа» panel draws it together with the tanker position. Arrival time is now deterministic in route length.
+- **Files** — «Імпортувати сценарій» reads a JSON scenario (`version`, `balance`, `markup`, `reservoirs`; strict validation with Ukrainian error messages, loads paused), «Завантажити журнал» downloads the session journal as NDJSON. Example: `public/scenarios/default.json`.
+- **Journal** — bounded (500 records, truncation disclosed with an explicit `journal-truncated` record): session starts, tick summaries, tanker departures/arrivals with route length, markup changes, game over.
 
-Entities stay plain interfaces inside the store; classes are stateless systems that operate on the immer draft. One class per file, `src/lib/sim/systems/`:
+## Interfaces
 
-| Class | Role |
-|---|---|
-| `TickSystem` | abstract base: public `run`, protected abstract `execute` |
-| `NewsSystem` | event lifecycle, weighted pool pick, pump outages |
-| `TankerSystem` | benzovoz orders and arrivals (public `order` + tick) |
-| `SpawnSystem` | demand-driven car acquisition, roster reuse |
-| `PumpAssignmentSystem` | queue-to-pump allocation, rejection paths |
-| `RefuelSystem` | metered delivery, incremental payment |
-| `QueueSystem` | patience decay, abandonment |
-| `BankruptcySystem` | game-over threshold |
-| `SimulationEngine` | composes the systems, polymorphic tick loop |
+| Contract | File | Implementation |
+|---|---|---|
+| `ISimSystem` | `src/lib/sim/contracts/sim-system.ts` | `TickSystem` and all 7 subsystems; the engine holds `readonly ISimSystem[]` |
+| `IRouteFinder` | `src/lib/sim/routing/route-finder.ts` | `DijkstraRouteFinder`, injected into `TankerSystem` |
+| `ILogFileTransport` | `src/lib/files/log-file-transport.ts` | `BrowserLogFileTransport` (file picker reads, blob downloads) |
+| `SimContext` | `src/lib/sim/sim-context.ts` | notification callback; `silentContext` for headless runs |
 
-- **Access modifiers:** `public` on the system contract, `protected` on the `execute` hook, `private` on domain helpers (`acquireCar`, `finishRefuel`, `pickEvent`, …)
-- **Inheritance:** seven concrete systems extend `TickSystem`
-- **Polymorphism:** `SimulationEngine` runs a `readonly TickSystem[]` — dynamic dispatch, no concrete-type checks
-- **Encapsulation:** zustand remains the single source of truth; market prices are derived selectors computed on read; systems never hold state
+## Architecture notes
 
-Notifications (sonner toasts) are emitted through a `SimContext` callback and published outside the immer recipe by the store actions.
+- Systems are stateless, one class per file; entities stay plain interfaces in `types.ts` (no class instances inside the store).
+- A tanker journey is a single `route` + `departedTick` record in the state; ETA, progress and map position are derived values (`routing/route-selectors.ts`) — no competing counters.
+- The journal holds plain records in the store state (immer-safe), appended at store action boundaries; notifications publish after the mutation completes.
+- Road topology is immutable data in `constants.ts`, independent of the SVG coordinates of the map.
 
-News copy is pure data split by category (`news-categories/`), reassembled in `news-pool.ts`.
+## Tests
 
-## Parity guarantee
+`bun test` — 26 tests:
 
-The refactor was verified against num-1 with a seeded headless harness: 5 scenarios × 3 seeds × 3000 ticks, per-tick state snapshots and an RNG call counter — byte-identical runs, including the bankruptcy game-over path.
+- Dijkstra: cheapest total beats the greedy first edge, disconnected target → `null`, equal cost → deterministic result, undirected links
+- Tanker system: balance charge, no-route/no-charge guard, arrival exactly at `route.totalTicks`, single arrival notice, reservoir overflow cap
+- Scenario codec: valid input, broken JSON, wrong version, non-finite numbers, out-of-range values, round-trip
+- Journal: cap + truncation disclosure, tick summary scalars, NDJSON round-trip
+- Regression: 3 seeds × 500 ticks against a committed golden fixture (`tests/fixtures/sim-baseline.json`; `UPDATE_BASELINE=1 bun test` rewrites it)
 
-Tuning knobs: `src/lib/sim/constants.ts`.
+## Differences from num-2
+
+Intentional: the random tanker ETA is replaced by graph routing (changed RNG stream → regenerated baseline), and the store gained the journal plus scenario import. num-2 stays frozen as a separate lab with its own parity guarantee to num-1.
