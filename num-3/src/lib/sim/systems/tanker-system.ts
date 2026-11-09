@@ -30,7 +30,13 @@ export class TankerSystem extends TickSystem {
     })
     state.nextTankerId += 1
     state.balance -= cost
-    context.emit({ kind: 'tanker-departed', fuelType, cost })
+    context.emit({
+      kind: 'tanker-departed',
+      fuelType,
+      cost,
+      routeTicks: route.totalTicks,
+      stops: route.nodeIds.length - 1,
+    })
   }
 
   protected execute(state: Draft<SimState>, context: SimContext): void {

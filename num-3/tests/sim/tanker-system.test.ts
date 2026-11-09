@@ -33,7 +33,13 @@ describe('TankerSystem', () => {
     expect(state.balance).toBeLessThan(START_BALANCE)
     expect(state.nextTankerId).toBe(2)
     expect(notices).toEqual([
-      { kind: 'tanker-departed', fuelType: 'a95', cost: expect.any(Number) },
+      {
+        kind: 'tanker-departed',
+        fuelType: 'a95',
+        cost: expect.any(Number),
+        routeTicks: expect.any(Number),
+        stops: expect.any(Number),
+      },
     ])
     const tanker = state.tankers[0]
     expect(tanker.departedTick).toBe(0)

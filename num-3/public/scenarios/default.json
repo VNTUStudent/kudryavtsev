@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "balance": 150000,
+  "markup": 0.05,
+  "reservoirs": {
+    "a92": 1000,
+    "a95": 1000,
+    "diesel": 1000
+  }
+}

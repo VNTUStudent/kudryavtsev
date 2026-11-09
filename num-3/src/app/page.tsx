@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { Toaster } from '@/components/ui/sonner'
+import { FilePanel } from '@/components/files/FilePanel'
 import { NewsBroadcast } from '@/components/news/NewsBroadcast'
 import { StationScene } from '@/components/scene/StationScene'
 import { CarDetailSheet } from '@/components/sim/CarDetailSheet'
@@ -32,6 +33,7 @@ export default function Home() {
             <MarkupSlider />
             <TankerPanel />
             <RouteMap />
+            <FilePanel />
             <StationStats />
           </div>
           <div className="lg:relative">
